@@ -39,13 +39,13 @@ $include-html-global-classes: $include-html-classes;
 // Global
 
 // We use these to define default font weights
-// $font-weight-normal: normal !default;
+$font-weight-normal: 200;
 // $font-weight-bold: bold !default;
 
 // We use these to control various global styles
 // $body-bg: #fff;
 // $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: 'Open Sans', sans-serif;
 $font-weight-normal:normal;
 $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -1209,7 +1209,7 @@ $sub-nav-active-cursor: default;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-$topbar-bg-color: #3D4244;
+$topbar-bg-color: rgba(0,0,0,0);
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin

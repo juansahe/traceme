@@ -1,3 +1,32 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+nav * {
+  line-height: 52px;
+}
+
+#head {
+  background: #4e4e56 url("soyo_header.jpg") no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  height: 500px;
+}
+#head * {
+ color: #fff; 
+}
+
+.bmargin { 
+  margin-bottom: 80px;
+}
+.bmargin-top { 
+  margin-top: 80px;
+}
+.mmargin { 
+  margin-bottom: 40px;
+}
+.mmargin-top { 
+  margin-top: 40px;
+}
