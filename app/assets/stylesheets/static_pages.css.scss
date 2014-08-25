@@ -49,22 +49,22 @@ ul {
   width: auto;
   min-width: 100%;
 }
-.bmargin { 
+.bmargin {
   margin-bottom: 80px;
 }
-.bmargin-top { 
+.bmargin-top {
   margin-top: 80px;
 }
-.mmargin { 
+.mmargin {
   margin-bottom: 40px;
 }
-.mmargin-top { 
+.mmargin-top {
   margin-top: 40px;
 }
-.smargin { 
+.smargin {
   margin-bottom: 10px;
 }
-.smargin-top { 
+.smargin-top {
   margin-top: 10px;
 }
 .slim {
@@ -139,5 +139,7 @@ input {
   padding-top:10px;
 }
 .own-color-font {
-  color: #2d2d2d !important;
+  color: #1c1c1c !important;
+  font-size: 0.7rem !important;
+  font-weight: 900;
 }
