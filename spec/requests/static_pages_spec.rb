@@ -1,34 +1,35 @@
 require 'spec_helper'
 
 describe "StaticPages" do
+  subject { page }
+
   describe "Home page" do
-    it "should have content 'Home'" do
-      visit '/static_pages/home'
-      expect(page).to have_content('Home') 
-    end
-    it "shold have title 'TraceMe | Home'" do
-      visit '/static_pages/home'
-      expect(page).to have_title('TraceMe | Home')
+    before { visit root_path }
+
+    it { should have_content('soyo') }
+    it { should have_title('SoYo | Inicio') }
+  end
+
+  it "open the Signin modal" do
+    visit root_path
+    click_link "Sube tu hoja de vida"
+    within("#siginModal") do 
+      expect(page).to have_selector('h2', :text => "Bienvenido")
     end
   end
+
   describe "Help page" do
-    it "should have content 'Help'" do
-      visit '/static_pages/help'
-      expect(page).to have_content('Help') 
-    end
-    it "shold have title 'TraceMe | Help'" do
-      visit '/static_pages/help'
-      expect(page).to have_title('TraceMe | Help')
-    end
+    before { visit help_path }
+
+    it { should have_content('Ayuda') }
+    it { should have_title('SoYo | Ayuda') }
   end
+
   describe "Home About" do
-    it "should have content 'About'" do
-      visit '/static_pages/about'
-      expect(page).to have_content('About') 
-    end
-    it "shold have title 'TraceMe | About'" do
-      visit '/static_pages/about'
-      expect(page).to have_title('TraceMe | About')
-    end
+    before { visit about_path }
+    
+    it { should have_content('Acerca de nosotros') }
+    it { should have_title('SoYo | Acerca de nosotros') }
   end
+
 end

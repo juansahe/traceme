@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title><%= full_title(yield(:title)) %></title>
-
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= csrf_meta_tags %>
@@ -13,13 +13,12 @@
 
   <body>
     <header>
-      <%= render 'layouts/navigation' %>
+      <%= header_to_use() %>
     </header>
-    <div class="row">
-      <div class="large-12 columns">
-        <%= yield %>
-      </div>
-    </div>
+    <%= yield %>
     <%= javascript_include_tag "application" %>
+    <footer>
+      <%= render 'layouts/footer' %>
+    </footer>
   </body>
 </html>

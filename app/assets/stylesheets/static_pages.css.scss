@@ -1,3 +1,145 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+nav * {
+  line-height: 52px;
+}
+.inline-list {
+  li {
+    margin-left: 2.375em;
+  }
+}
+ul {
+  font-size: 12px;
+}
+#head {
+  background: #4e4e56 url("soyo_header.jpg") no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  height: 400px;
+  * {
+    color: #fff;
+  }
+}
+.header_home {
+  margin:0px 30px 0px 30px;
+}
+#employee {
+  background-color: #da635d;
+  * {
+    color: #fff;
+  }
+}
+#employer {
+  background-color: #4e4e56;
+  * {
+    color: #fff;
+  }
+}
+#home-footer {
+  background-color: #dcd0c0;
+  * {
+    color: #fff;
+  }
+}
+.full_width {
+  width: auto;
+  min-width: 100%;
+}
+.bmargin {
+  margin-bottom: 80px;
+}
+.bmargin-top {
+  margin-top: 80px;
+}
+.mmargin {
+  margin-bottom: 40px;
+}
+.mmargin-top {
+  margin-top: 40px;
+}
+.smargin {
+  margin-bottom: 10px;
+}
+.smargin-top {
+  margin-top: 10px;
+}
+.slim {
+  font-weight:200;
+}
+.secondary {
+  opacity: 0.7;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.text-jumbo {
+  font-size: 50px;
+  font-weight: 900;
+}
+p {
+  font-size:80%;
+}
+.pos_rel {
+  position: relative;
+}
+.down-triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 35px 0 35px;
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+  bottom: -20px;
+  left:45%;
+}
+.fix_top_ee {
+  padding-top: 10px;
+}
+.fix_top_ey {
+  padding-top: 30px;
+}
+.header-form {
+  padding-top: 100px;
+}
+.reduce-padding {
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+}
+
+input {
+  line-height: 40px;
+  height: 40px !important;
+  color: #000 !important;
+  font-size: 1.0rem !important;
+}
+.postfix {
+  width: 200%;
+  font-size: 1.0rem;
+  height: 2.50rem;
+}
+.postfix.button {
+  padding-top: 15%;
+}
+.footer-list {
+  ul {
+    list-style-type: none;
+    text-align: center;
+    li {
+      display: inline-block;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}
+.header-button-padding {
+  padding-top:10px;
+}
+.own-color-font {
+  color: #1c1c1c !important;
+  font-size: 0.7rem !important;
+  font-weight: 900;
+}
