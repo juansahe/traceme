@@ -1,38 +1,5 @@
-<% provide(:title, 'Home') %>
-<div id="head">
-  <div class="row full_width">
-    <div class="header_home">
-      <%= render 'layouts/navigation' %>
-    </div>
-    <div class="large-12 columns text-center">
-      <h1 class="uppercase text-jumbo">Encuentra tu candidato ideal</h1>
-      <h4 class="text-center strong">Busca, selecciona y oferta. La manera correcta de encontrar a la persona ideal</h4>
-    </div>
-  </div>
-  <div class="header-form">
-    <form action="home_submit" method="get" accept-charset="utf-8">
-      <div class="row">
-        <div class="large-4 columns reduce-padding">
-          <input type="text" name="some_name" value="" id="some_name" placeholder="Area de trabajo?">
-        </div>
-        <div class="large-4 columns reduce-padding">
-          <input type="text" name="some_name" value="" id="some_name" placeholder="Ciudad del trabajo?">
-        </div>
-        <div class="large-4 columns reduce-padding">
-          <div class="row collapse">
-            <div class="small-10 columns">
-              <input type="text" name="some_name" value="" id="some_name" placeholder="Experiencia (meses, años)?">
-            </div>
-            <div class="small-2 columns">
-              <a href="#" class="button postfix">Buscar</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
-
+<% provide(:title, 'Inicio') %>
+<%# Como funciona (candidato) %>
 <div class="row inner pos_rel">
   <div class="large-12 columns text-center smargin smargin-top">
     <h2>¿Cómo funciona para el candidato?</h2>
@@ -74,7 +41,7 @@
     </div>
   </div>
 </div>
-
+<%# Como funciona (empleador) %>
 <div class="row inner pos_rel">
   <div class="large-12 columns text-center smargin smargin-top">
     <h2>¿Cómo funciona para el empleador?</h2>
@@ -116,24 +83,12 @@
     </div>
   </div>
 </div>
-
+<%# Informacion de contacto %>
 <div class="row inner pos_rel">
   <div class="large-12 columns text-center smargin smargin-top">
     <h2>Informacion de contacto</h2>
     <h4 class="slim secondary">
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     </h4>
-  </div>
-</div>
-
-<div id="home-footer">
-  <div class="row inner">
-    <div class="large-12 columns smargin-top footer-list">
-      <ul>
-        <li class="name"><a href="#">Acerca de nosotros</a></li>
-        <li class="name"><a href="#">Contactanos</a></li>
-        <li class="name"><a href="#">Terminos y condiciones</a></li>
-      </ul>
-    </div>
   </div>
 </div>

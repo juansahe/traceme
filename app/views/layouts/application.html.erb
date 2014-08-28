@@ -13,9 +13,12 @@
 
   <body>
     <header>
-      <%#= render 'layouts/navigation' %>
+      <%= header_to_use() %>
     </header>
     <%= yield %>
     <%= javascript_include_tag "application" %>
+    <footer>
+      <%= render 'layouts/footer' %>
+    </footer>
   </body>
 </html>
